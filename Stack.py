@@ -1,5 +1,6 @@
 
-class Stack:
+# List implementation of a stack
+class AStack:
 
     def __init__(self):
         self.stack = []
@@ -23,7 +24,7 @@ class Stack:
 
 if __name__ == "__main__":
 
-    s = Stack()
+    s = AStack()
     s.push(5)
     s.push(7)
     s.peek()
