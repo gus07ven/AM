@@ -1,5 +1,6 @@
 from typing import List
 
+
 # O(n^2), stable, in-place.
 # Pros: Good for sorting list almost sorted (almost at O(1)). Used for smaller lists in Python's Timsort.
 # Cons: Slow.
@@ -11,6 +12,9 @@ def insertion_sort(unsorted_list: List[int]) -> List[int]:
             current -= 1
     return unsorted_list
 
+# O(n^2), NOT-stable, in-place
+# Pros: How most people would sort something
+# Cons: Slow.
 def selection_sort(unsorted_list: List[int]) -> List[int]:
     n = len(unsorted_list)
     for i in range(n):
@@ -29,6 +33,7 @@ if __name__ == '__main__':
     res = insertion_sort(unsorted_list)
     print(' '.join(map(str, res)))
 
+    # Selection sort
     unsorted_list = [5, 3, 1, 2, 4]
     res = selection_sort(unsorted_list)
     print(' '.join(map(str, res)))
