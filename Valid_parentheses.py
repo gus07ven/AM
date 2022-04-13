@@ -21,3 +21,7 @@ if __name__ == '__main__':
 
     input2 = '[{)]'
     print(valid_parentheses(input2))
+
+    # Should the empty string return False?
+    input3 = ''
+    print(valid_parentheses(input2))
