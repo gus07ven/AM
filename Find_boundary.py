@@ -2,7 +2,6 @@ from typing import List
 
 
 def find_boundary(arr: List[bool]) -> int:
-    # WRITE YOUR BRILLIANT CODE HERE
     low = 0
     high = len(arr)
 
